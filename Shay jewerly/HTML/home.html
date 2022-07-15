@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Design/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>SA | Art & Jewelry</title>
+  </head>
+  <body>
+      <!----------------------------------------------------- Nav container ----------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed col-12">
+      <div class="container-fluid">
+        <!-- Nav logo -->
+        <img class="nav-logo" src="/images/shaylogonew-removebg-preview.png" alt="#">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav buttons -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/HTML/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/HTML/mystory.html">About</a>
+            </li>
+          </ul>
+          <!-- Nav search bar -->
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------------------------- Main container -------------------------------------------------------->
+    <main class="d-flex flex-column align-items-center">
+        <div class="main-logo">
+          <!-- The main logo -->
+           <img src="/images/biglogo.jpeg" alt="#">
+        </div>
+        <div class="container-fluid slider">
+            <div class="slide-track d-flex">
+                <!-- The sliding images under the logo -->
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imageone.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagetwo.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagethree.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagefour.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagesix.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imageseven.jpeg" alt="#">
+                </div>
+                <!-- The sliding images under the logo (doubled) -->
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imageone.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagetwo.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagethree.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagefour.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imagesix.jpeg" alt="#">
+                </div>
+                <div class="slide d-flex align-items-center">
+                    <img src="/images/imageseven.jpeg" alt="#">
+                </div>
+            </div>
+        </div>
+        <!-- The products container -->
+        <div class="col-12 products d-sm-flex justify-content-around align-items-center mt-5">
+          <!---------------------------- Earrings container ------------------------>
+          <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center earrings">
+            <button class="earrings-btn">Earrings</button>
+          </div>
+          <!---------------------------- Rings container  ------------------------>
+          <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center rings">
+            <a href="http://127.0.0.1:5500/HTML/products.html"><button class="rings-btn">Rings</button></a>
+          </div>
+          <!---------------------------- Necklace container  ------------------------>
+          <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center chains">
+            <button class="chains-btn">Necklace</button>
+          </div>
+        </div>
+        <!-- The main section title container -->
+        <div class="container title mt-sm-5 text-center">
+          <h1 class="mt-3">"Every piece of jewelry tells a story"</h1>
+        </div>
+        <!------------------- The bg black video product slider container ---------------->
+        <div class="container-fluid special mt-sm-5 bg-black">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- Video 1 -->
+              <div class="carousel-item active">
+                <video src="/images/videos/special1.mp4" muted autoplay loop class="d-block w-50">
+              </div>
+              <!-- Video 2 -->
+              <div class="carousel-item">
+                <video src="/images/videos/special2.mp4" muted autoplay loop class="d-block w-50">
+              </div>
+              <!-- Video 3 -->
+              <div class="carousel-item">
+                <video src="/images/videos/special3.mp4" muted autoplay loop class="d-block w-50">
+              </div>
+              <!-- Caption title -->
+              <div class="carousel-caption">
+                <h1 class="text-white d-flex justify-content-end mt-5 mt-sm-0">Unique Design<span class="mt-4">&</span><br>
+                   Natural Diamonds.</h1>
+              </div>
+            </div>
+            <!-- slider buttons scrolling Next and Previous -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!--------------------------------- About container  ------------------------------->
+        <!-- Buttons -->
+        <p class="mt-5 w-75 d-flex justify-content-between">
+          <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Planing To Propose?</a>
+          <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Design Process</button>
+          <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">About Our Diamonds</button>
+        </p>
+        <!-- container -->
+        <div class="row mb-5 w-100">
+          <!-- Planing to propose container -->
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                <img src="/images/Engagement.jpg">
+                <h2>Design Your Own Engagement Ring</h2>
+                <p>Our team of design consultants helps you figure out the details, explains your options, and guides you through each step of designing the perfect engagement ring.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Process container -->
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <img src="/images/Rhino.png">
+                <h2>Rhino3D</h2>
+                <p>Rhinoceros is used for computer-aided design (CAD), product design (e.g. jewelry design) as well as for multimedia and graphic design. We design our jewelries from a sketch using this tool that alow us to get the best results and quality by picking the right size and shape for our costumers.</p>
+                <a href="https://rhino3d.software/about-us">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Our diamonds container -->
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                <img src="/images/naturalGIA.jpg">
+                <h2>GIA Natural Diamonds</h2>
+                <p>Diamond forms under high temperature and pressure conditions that exist only about 100 miles beneath the earth's surface. Diamond's carbon atoms are bonded in essentially the same way in all directions. Another mineral, graphite, also contains only carbon, but its formation process and crystal structure are very different. Graphite is so soft that you can write with it, while diamond is so hard that you can only scratch it with another diamond.</p>
+                <a href="https://www.gia.edu/diamond">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <!------------------------------------------------------- Footer container --------------------------------------------------------->
+    <footer>
+      <div class="footer-container d-flex justify-content-around align-items-center">
+        <!-- Footer logo container -->
+        <div class="col-1 logo-footer mt-5 d-none d-sm-block">
+          <img src="/images/shaylogonew-removebg-preview.png">
+        </div>
+        <!-- Footer social media links container -->
+        <div class="col-2 link-footer d-sm-flex flex-column align-items-center justify-content-around">
+          <h4>SOCIALS</h4>
+          <a href="https://www.instagram.com/shay.abergel/"><i class="fa-brands fa-instagram-square"></i></a>
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+        </div>
+        <!-- Footer ABOUT container -->
+        <div class="col-2 about-footer d-sm-flex flex-column align-items-center">
+          <h4>ABOUT</h4>
+          <a href="http://127.0.0.1:5500/HTML/mystory.html"><p>My Story</p></a>
+          <p>Locations</p>
+          <p>Materials & Warranty</p>
+        </div>
+        <!-- Footer ORDERS container -->
+        <div class="col-2 orders-footer d-sm-flex flex-column align-items-center">
+          <h4>ORDERS</h4>
+          <p>Shipping</p>
+          <p>Returns & Exchanges</p>
+          <p>Terms of Service</p>
+          <p>Refund Policy</p>
+        </div>
+        <!-- Footer HELP container -->
+        <div class="col-2 help-footer d-sm-flex flex-column align-items-center">
+          <h4>HELP</h4>
+          <a href="http://127.0.0.1:5500/HTML/contact.html"><p>Contact</p></a>
+          <p>Wholesale</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/app.js"></script>
+  <!-- bootstrap js link  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

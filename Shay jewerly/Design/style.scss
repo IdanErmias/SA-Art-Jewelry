@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+// ---------------------------------------------- Nav container ------------------------------------ //
+.navbar{
+    background-color: rgba(0, 0, 0, 0.086);
+    z-index: 1;
+    .nav-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-toggler{
+        color: black;
+    }
+    i{
+        font-size: 25px;
+    }
+    .cart-items{
+        position: absolute;
+        top: 5px;
+        right: 305px;
+        background-color: gold;
+        padding: 0 5px;
+        border-radius: 30%;
+        color: white;
+    }
+    .cart-btn{
+        border: none;
+        background: none;
+    }
+}
+// ---------------------------------------------- Main container ------------------------------------ //
+main{
+    height: auto;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    // The main logo
+    .main-logo{ 
+       height: 300px;
+       width: 300px;
+       img{
+        height: 300px;
+        width: 300px; 
+       }
+    }
+    // Sliding images under the logo 
+    .slider{
+        height: 250px;
+        position: relative;
+        width: 90%;
+        display: grid;
+        place-items: center;
+        .slide-track{
+            width: calc(250px * 12);
+            animation: scroll 40s linear infinite;
+            .slide-track:hover{
+                animation-play-state: paused;
+            }
+            // Every image of the slider
+            .slide{
+                height: 200px;
+                width: 250px;
+                padding: 15px;
+                perspective: 100px;
+                img{
+                    width: 100%;
+                    transition: transform 1s;
+                }
+                img:hover{
+                    transform: translateZ(20px);
+                }
+            }
+        }
+    }
+// --------- The gradient shadows at the sides of the scrolling -------- // 
+.slider::before,.slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+// Right side of the sliding bar
+.slider::before{
+    left: -75px;
+    height: 250px;
+    top: -10;
+}
+// Left side of the sliding bar
+.slider::after{
+    height: 250px;
+    right: -76px;
+    top: -10;
+    transform: rotateZ(180deg);
+}
+    // The products container
+    .products{
+        height: 700px;
+        z-index: 1;
+        background-color: rgb(219, 209, 209);
+        //  ------------------ Earrings -------------- //
+        .earrings{
+            background-image:url("/images/flower4.jpg");
+            background-size: cover;
+            height: 600px;
+            .earrings-btn{
+                height: 50px;
+                width: 150px;
+                border-radius: 10px;
+                border: 1px solid white;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .earrings-btn:hover{
+                height: 55px;
+                width: 170px;
+                font-size: 15px;
+                border: 3px solid white;
+            }
+        }
+        //  ------------------ Rings -------------- //
+        .rings{
+            background-image: url("/images/imageone.jpeg");
+            background-size: cover;
+            height: 600px;
+            .rings-btn{
+                height: 50px;
+                width: 150px;
+                border-radius: 10px;
+                border: 1px solid white;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .rings-btn:hover{
+                height: 55px;
+                width: 170px;
+                font-size: 15px;
+                border: 3px solid white;
+            }
+        }
+        //  ------------------ Necklace -------------- //
+        .chains{
+            background-image: url("/images/chain1.jpg");
+            background-size: cover;
+            height: 600px;
+            .chains-btn{
+                height: 50px;
+                width: 150px;
+                border-radius: 10px;
+                border: 1px solid white;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .chains-btn:hover{
+                height: 55px;
+                width: 170px;
+                font-size: 15px;
+                border: 3px solid white;
+            }
+        }
+    }
+    // The main section title container
+    .title{
+        height: 100px;
+        font-family: 'Lucida Handwriting';
+    }
+    // // The bg black video product slider container
+    .special{
+        .carousel-caption{
+            height: 400px;
+            font-family: 'Calisto mt';
+            h1{
+                font-size: 50px;
+            }
+        }
+    }     
+// -------------------------- About container ------------------------- //    
+.card img{
+   height: 300px;
+   width: 300px;
+}
+  // ------------------------------ Cart ----------------------------- //
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    background: rgba(79, 72, 65, 0.801);
+    z-index: 2;
+    visibility: hidden;
+  }
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: white;
+    z-index: 3;
+    background: rgb(231, 226, 221);
+    padding: 1.5rem;
+    transition: all 0.3s linear;
+    transform: translateX(100%);
+  }
+  .showCart {
+    transform: translateX(0);
+  }
+  .transparentBcg {
+    visibility: visible;
+  }  
+  .close-cart {
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  /* Cart Item */
+  .cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+  }
+  .cart-item h4 {
+    font-size: 15px;
+  }
+  .remove-item {
+    color: red;
+    cursor: pointer;
+  }
+  .fa-chevron-up,.fa-chevron-down {
+    color: green;
+    cursor: pointer;
+    font-size: 20px;
+  } 
+  /* Cart Footer */ 
+  .clear-cart{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+  }
+  .clear-cart:hover{
+    color: red;
+    width: 170px;
+    font-size: 15px;
+  }
+  // ----------------------------- Products ---------------------------- //
+  .products-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .bag-btn {
+    position: absolute;
+    top: 63.5%;
+    right: 0;
+    background: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    transform: translateX(101%);
+    cursor: pointer;
+  }
+  .bag-btn:hover {
+    color: green;
+    background: gold;
+  }
+  .img-container:hover .bag-btn {
+    transform: translateX(0);
+  }
+  .product-img {
+    transition: all 0.3s linear;
+  }
+  .img-container:hover .product-img {
+    opacity: 0.5;
+  }
+   .product h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+  }
+  .product h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+}
+// ---------------------------------------------- Footer container ------------------------------------- //
+.footer-container{
+    height: 300px;
+    background-color: lavender;
+    // The footer logo container
+    .logo-footer{
+        height: 80%;
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    // The social media links container
+    .link-footer{
+        height: 80%;
+        i{
+            font-size: 50px;
+            color: gray;
+        }
+        i:hover{
+            color: black;
+        }
+    }
+    // ABOUT container
+    .about-footer{
+        height: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        p{
+            color: gray;
+        }
+        p:hover{
+            color: black;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    // ORDERS container
+    .orders-footer{
+        height: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        p{
+            color: gray;
+        }
+        p:hover{
+            color: black;
+        }
+    }
+    // HELP container
+    .help-footer{
+        height: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        p{
+            color: gray;
+        }
+        p:hover{
+            color: black;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+// ------------------------------------------ Sliding images key frames ------------------------------- //
+@keyframes scroll{
+   0%{
+       transform: translateX(0);
+   }
+   100%{
+       transform: translateX(calc(-250px * 6));
+   }
+}
+
+// ------------------------------------------- Responsive for phones ------------------------------- //
+@media screen and (max-width: 415px){
+    .products{
+        height: 1800px !important;
+    }
+    .footer-container{
+        height: 350px;
+    }
+    .cart-items{
+        top: 135px !important;
+        right: 365px !important;
+    }
+    .carousel-caption{
+        height: 150px !important;
+        h1{
+            font-size: 15px !important;
+        }
+    }
+    .cart {
+        width: 30vw;
+        min-width: 450px;
+      }
+}

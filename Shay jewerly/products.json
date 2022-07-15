@@ -1,0 +1,116 @@
+{
+     "items": [
+        {
+          "id":"3cc8fe74-ee56-4b3e-8c74-e28b22646fde",
+          "img": "/images/1999ring1.jpg",
+          "title":"Gold 99'",
+          "name": "Custom Design",
+          "price": "1500"
+        },
+        {
+          "id":"7c007597-2922-4bb8-b6c8-e18cfb57d870",
+          "img": "/images/bigdiamond1.jpg",
+          "title": "OneOfKind",
+          "name": "0.50 Oval",
+          "price": "4500"
+        },
+        {
+          "id":"cb63d798-3c3a-44cf-945f-15e67deb1016",
+          "img": "/images/doubledrings2.jpg",
+          "title": "Wedding Set",
+          "name": "0.65 Round Cut",
+          "price": "2500"
+        },
+        {
+            "id":"d7159383-1f4a-4bd2-827b-575126808c8c",
+            "img": "/images/firstring3.jpg",
+            "title": "Classic",
+            "name": "One Oval Golden Ring",
+            "price": "1200"
+        },
+        {
+            "id":"aa896b53-eedb-4d33-9731-fcae0003a3e8",
+            "img": "/images/goldring1.jpg",
+            "title": "HalfMoon",
+            "name": "Unique Design",
+            "price": "2000"
+        },
+        {
+            "id":"b0bacb70-c6b7-4465-b798-cc92405d8326",
+            "img": "/images/matchring2.jpg",
+            "title": "Baguette",
+            "name": "0.40ct Center Stone",
+            "price": "3000"
+        },
+        {
+            "id":"1b15832e-807a-4911-9377-f36c79f4119e",
+            "img": "/images/new1.jpg",
+            "title": "Limited Edition",
+            "name": "6 Diamonds(0.10ct Each)",
+            "price": "4000"
+        },
+        {
+            "id":"94d1bdfd-a78c-494c-b891-702552749aff",
+            "img": "/images/queindiamond3.jpg",
+            "title": "The Quin",
+            "name": "Perfect Match",
+            "price": "5000"
+        },
+        {
+            "id":"85827682-1df7-4c49-81be-a6d7866f673d",
+            "img": "/images/silverring3.jpg",
+            "title": "The Only One",
+            "name": "0.80ct Emerald Cut",
+            "price": "1500"
+        },
+        {
+            "id":"",
+            "img": "/images/imageone.jpeg",
+            "title": "Make You Shine",
+            "name": "3 Sizes Diamond Bands",
+            "price": "2500"
+        },
+        {
+            "id":"3d5444b0-2f5a-48b1-925a-e5a05790a665",
+            "img": "/images/imagetwo.jpeg",
+            "title": "Engagement",
+            "name": "Best Combination",
+            "price": "4500"
+        },
+        {
+            "id":"3ea4954c-c922-4fab-9c6c-c5f0ba844208",
+            "img": "/images/imagethree.jpeg",
+            "title": "Five Stone Dream",
+            "name": "1.5ct Of Beauty",
+            "price": "8000"
+        },
+        {
+            "id":"c6e1f011-9f3a-4664-8827-2846d49cc5e7",
+            "img": "/images/imagefour.jpeg",
+            "title": "PearFect",
+            "name": "Uniqueness",
+            "price": "5500"
+        },
+        {
+            "id":"4e918ccc-40e2-48b3-b5cc-bf33a807b2b0",
+            "img": "/images/imagefive.jpeg",
+            "title": "PearShape",
+            "name": "0.90ct Along 0.24ct",
+            "price": "5200"
+        },
+        {
+            "id":"5b98f474-e623-46f4-9829-b2a6a974ee8d",
+            "img": "/images/imagesix.jpeg",
+            "title": "HeartPart",
+            "name": "1.5ct Oval Heart Shape",
+            "price": "6000"
+        },
+        {
+            "id":"e74ff3ab-66c8-4262-b1ab-2fc8154327b2",
+            "img": "/images/imageseven.jpeg",
+            "title": "Special Combine",
+            "name": "0.24ct & 1ct Rings Duet",
+            "price": "4500"
+        }
+      ]
+}
